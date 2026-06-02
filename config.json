@@ -1,0 +1,38 @@
+{
+  "currency": "USD",
+  "sources": {
+    "seatgeek": { "enabled": true },
+    "stubhub": { "enabled": true },
+    "fifa":    { "enabled": true }
+  },
+  "venues": {
+    "metlife": {
+      "name": "MetLife Stadium",
+      "city": "East Rutherford",
+      "fifa_resale_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets"
+    },
+    "hardrock": {
+      "name": "Hard Rock Stadium",
+      "city": "Miami Gardens",
+      "fifa_resale_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets"
+    }
+  },
+  "matches": [
+    { "id": "ML01", "venue": "metlife",  "date": "2026-06-13", "round": "Group",        "label": "Brazil vs Morocco",          "query": "World Cup Brazil Morocco MetLife" },
+    { "id": "ML02", "venue": "metlife",  "date": "2026-06-16", "round": "Group",        "label": "France vs Senegal",           "query": "World Cup France Senegal MetLife" },
+    { "id": "ML03", "venue": "metlife",  "date": "2026-06-22", "round": "Group",        "label": "Norway vs Senegal",           "query": "World Cup Norway Senegal MetLife" },
+    { "id": "ML04", "venue": "metlife",  "date": "2026-06-25", "round": "Group",        "label": "Ecuador vs Germany",          "query": "World Cup Ecuador Germany MetLife" },
+    { "id": "ML05", "venue": "metlife",  "date": "2026-06-27", "round": "Group",        "label": "Panama vs England",           "query": "World Cup Panama England MetLife" },
+    { "id": "ML06", "venue": "metlife",  "date": "2026-06-30", "round": "Round of 32",  "label": "Round of 32",                 "query": "World Cup Round of 32 MetLife" },
+    { "id": "ML07", "venue": "metlife",  "date": "2026-07-05", "round": "Round of 16",  "label": "Round of 16",                 "query": "World Cup Round of 16 MetLife" },
+    { "id": "ML08", "venue": "metlife",  "date": "2026-07-19", "round": "Final",        "label": "FIFA World Cup Final",        "query": "World Cup Final MetLife" },
+
+    { "id": "HR01", "venue": "hardrock", "date": "2026-06-15", "round": "Group",        "label": "Saudi Arabia vs Uruguay",     "query": "World Cup Saudi Arabia Uruguay Hard Rock" },
+    { "id": "HR02", "venue": "hardrock", "date": "2026-06-21", "round": "Group",        "label": "Uruguay vs Cabo Verde",       "query": "World Cup Uruguay Cabo Verde Hard Rock" },
+    { "id": "HR03", "venue": "hardrock", "date": "2026-06-24", "round": "Group",        "label": "Scotland vs Brazil",          "query": "World Cup Scotland Brazil Hard Rock" },
+    { "id": "HR04", "venue": "hardrock", "date": "2026-06-27", "round": "Group",        "label": "Portugal vs Colombia",        "query": "World Cup Portugal Colombia Hard Rock" },
+    { "id": "HR05", "venue": "hardrock", "date": "2026-07-03", "round": "Round of 32",  "label": "Round of 32",                 "query": "World Cup Round of 32 Hard Rock" },
+    { "id": "HR06", "venue": "hardrock", "date": "2026-07-11", "round": "Quarter-final","label": "Quarter-final",               "query": "World Cup Quarter-final Hard Rock" },
+    { "id": "HR07", "venue": "hardrock", "date": "2026-07-18", "round": "Third place",  "label": "Third-place Play-off",        "query": "World Cup Third Place Hard Rock" }
+  ]
+}
