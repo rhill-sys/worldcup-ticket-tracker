@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-02T00:33:57+00:00",
+  "generated_at": "2026-06-02T00:43:07+00:00",
   "currency": "USD",
   "matches": [
     {
@@ -14,7 +14,7 @@
           "min_price": null,
           "listing_count": null,
           "url": "https://seatgeek.com/search?q=World%20Cup%20Brazil%20Morocco%20MetLife",
-          "note": "no SEATGEEK_CLIENT_ID"
+          "note": ""
         },
         "stubhub": {
           "min_price": null,
@@ -42,7 +42,7 @@
           "min_price": null,
           "listing_count": null,
           "url": "https://seatgeek.com/search?q=World%20Cup%20France%20Senegal%20MetLife",
-          "note": "no SEATGEEK_CLIENT_ID"
+          "note": ""
         },
         "stubhub": {
           "min_price": null,
@@ -70,7 +70,7 @@
           "min_price": null,
           "listing_count": null,
           "url": "https://seatgeek.com/search?q=World%20Cup%20Norway%20Senegal%20MetLife",
-          "note": "no SEATGEEK_CLIENT_ID"
+          "note": ""
         },
         "stubhub": {
           "min_price": null,
@@ -98,7 +98,7 @@
           "min_price": null,
           "listing_count": null,
           "url": "https://seatgeek.com/search?q=World%20Cup%20Ecuador%20Germany%20MetLife",
-          "note": "no SEATGEEK_CLIENT_ID"
+          "note": ""
         },
         "stubhub": {
           "min_price": null,
@@ -126,7 +126,7 @@
           "min_price": null,
           "listing_count": null,
           "url": "https://seatgeek.com/search?q=World%20Cup%20Panama%20England%20MetLife",
-          "note": "no SEATGEEK_CLIENT_ID"
+          "note": ""
         },
         "stubhub": {
           "min_price": null,
@@ -154,7 +154,7 @@
           "min_price": null,
           "listing_count": null,
           "url": "https://seatgeek.com/search?q=World%20Cup%20Round%20of%2032%20MetLife",
-          "note": "no SEATGEEK_CLIENT_ID"
+          "note": ""
         },
         "stubhub": {
           "min_price": null,
@@ -182,7 +182,7 @@
           "min_price": null,
           "listing_count": null,
           "url": "https://seatgeek.com/search?q=World%20Cup%20Round%20of%2016%20MetLife",
-          "note": "no SEATGEEK_CLIENT_ID"
+          "note": ""
         },
         "stubhub": {
           "min_price": null,
@@ -210,7 +210,7 @@
           "min_price": null,
           "listing_count": null,
           "url": "https://seatgeek.com/search?q=World%20Cup%20Final%20MetLife",
-          "note": "no SEATGEEK_CLIENT_ID"
+          "note": ""
         },
         "stubhub": {
           "min_price": null,
@@ -238,7 +238,7 @@
           "min_price": null,
           "listing_count": null,
           "url": "https://seatgeek.com/search?q=World%20Cup%20Saudi%20Arabia%20Uruguay%20Hard%20Rock",
-          "note": "no SEATGEEK_CLIENT_ID"
+          "note": ""
         },
         "stubhub": {
           "min_price": null,
@@ -266,7 +266,7 @@
           "min_price": null,
           "listing_count": null,
           "url": "https://seatgeek.com/search?q=World%20Cup%20Uruguay%20Cabo%20Verde%20Hard%20Rock",
-          "note": "no SEATGEEK_CLIENT_ID"
+          "note": ""
         },
         "stubhub": {
           "min_price": null,
@@ -294,7 +294,7 @@
           "min_price": null,
           "listing_count": null,
           "url": "https://seatgeek.com/search?q=World%20Cup%20Scotland%20Brazil%20Hard%20Rock",
-          "note": "no SEATGEEK_CLIENT_ID"
+          "note": ""
         },
         "stubhub": {
           "min_price": null,
@@ -322,7 +322,7 @@
           "min_price": null,
           "listing_count": null,
           "url": "https://seatgeek.com/search?q=World%20Cup%20Portugal%20Colombia%20Hard%20Rock",
-          "note": "no SEATGEEK_CLIENT_ID"
+          "note": ""
         },
         "stubhub": {
           "min_price": null,
@@ -350,7 +350,7 @@
           "min_price": null,
           "listing_count": null,
           "url": "https://seatgeek.com/search?q=World%20Cup%20Round%20of%2032%20Hard%20Rock",
-          "note": "no SEATGEEK_CLIENT_ID"
+          "note": ""
         },
         "stubhub": {
           "min_price": null,
@@ -378,7 +378,7 @@
           "min_price": null,
           "listing_count": null,
           "url": "https://seatgeek.com/search?q=World%20Cup%20Quarter-final%20Hard%20Rock",
-          "note": "no SEATGEEK_CLIENT_ID"
+          "note": ""
         },
         "stubhub": {
           "min_price": null,
@@ -406,7 +406,7 @@
           "min_price": null,
           "listing_count": null,
           "url": "https://seatgeek.com/search?q=World%20Cup%20Third%20Place%20Hard%20Rock",
-          "note": "no SEATGEEK_CLIENT_ID"
+          "note": ""
         },
         "stubhub": {
           "min_price": null,
