@@ -1,5 +1,426 @@
 {
-  "generated_at": null,
+  "generated_at": "2026-06-02T00:33:57+00:00",
   "currency": "USD",
-  "matches": []
+  "matches": [
+    {
+      "id": "ML01",
+      "venue": "metlife",
+      "venue_name": "MetLife Stadium",
+      "date": "2026-06-13",
+      "round": "Group",
+      "label": "Brazil vs Morocco",
+      "sources": {
+        "seatgeek": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Brazil%20Morocco%20MetLife",
+          "note": "no SEATGEEK_CLIENT_ID"
+        },
+        "stubhub": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.stubhub.com/find/s/?q=World%20Cup%20Brazil%20Morocco%20MetLife",
+          "note": "no STUBHUB_API_TOKEN"
+        },
+        "fifa": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets",
+          "note": "manual: FIFA resale has no public price API"
+        }
+      }
+    },
+    {
+      "id": "ML02",
+      "venue": "metlife",
+      "venue_name": "MetLife Stadium",
+      "date": "2026-06-16",
+      "round": "Group",
+      "label": "France vs Senegal",
+      "sources": {
+        "seatgeek": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://seatgeek.com/search?q=World%20Cup%20France%20Senegal%20MetLife",
+          "note": "no SEATGEEK_CLIENT_ID"
+        },
+        "stubhub": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.stubhub.com/find/s/?q=World%20Cup%20France%20Senegal%20MetLife",
+          "note": "no STUBHUB_API_TOKEN"
+        },
+        "fifa": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets",
+          "note": "manual: FIFA resale has no public price API"
+        }
+      }
+    },
+    {
+      "id": "ML03",
+      "venue": "metlife",
+      "venue_name": "MetLife Stadium",
+      "date": "2026-06-22",
+      "round": "Group",
+      "label": "Norway vs Senegal",
+      "sources": {
+        "seatgeek": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Norway%20Senegal%20MetLife",
+          "note": "no SEATGEEK_CLIENT_ID"
+        },
+        "stubhub": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.stubhub.com/find/s/?q=World%20Cup%20Norway%20Senegal%20MetLife",
+          "note": "no STUBHUB_API_TOKEN"
+        },
+        "fifa": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets",
+          "note": "manual: FIFA resale has no public price API"
+        }
+      }
+    },
+    {
+      "id": "ML04",
+      "venue": "metlife",
+      "venue_name": "MetLife Stadium",
+      "date": "2026-06-25",
+      "round": "Group",
+      "label": "Ecuador vs Germany",
+      "sources": {
+        "seatgeek": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Ecuador%20Germany%20MetLife",
+          "note": "no SEATGEEK_CLIENT_ID"
+        },
+        "stubhub": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.stubhub.com/find/s/?q=World%20Cup%20Ecuador%20Germany%20MetLife",
+          "note": "no STUBHUB_API_TOKEN"
+        },
+        "fifa": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets",
+          "note": "manual: FIFA resale has no public price API"
+        }
+      }
+    },
+    {
+      "id": "ML05",
+      "venue": "metlife",
+      "venue_name": "MetLife Stadium",
+      "date": "2026-06-27",
+      "round": "Group",
+      "label": "Panama vs England",
+      "sources": {
+        "seatgeek": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Panama%20England%20MetLife",
+          "note": "no SEATGEEK_CLIENT_ID"
+        },
+        "stubhub": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.stubhub.com/find/s/?q=World%20Cup%20Panama%20England%20MetLife",
+          "note": "no STUBHUB_API_TOKEN"
+        },
+        "fifa": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets",
+          "note": "manual: FIFA resale has no public price API"
+        }
+      }
+    },
+    {
+      "id": "ML06",
+      "venue": "metlife",
+      "venue_name": "MetLife Stadium",
+      "date": "2026-06-30",
+      "round": "Round of 32",
+      "label": "Round of 32",
+      "sources": {
+        "seatgeek": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Round%20of%2032%20MetLife",
+          "note": "no SEATGEEK_CLIENT_ID"
+        },
+        "stubhub": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.stubhub.com/find/s/?q=World%20Cup%20Round%20of%2032%20MetLife",
+          "note": "no STUBHUB_API_TOKEN"
+        },
+        "fifa": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets",
+          "note": "manual: FIFA resale has no public price API"
+        }
+      }
+    },
+    {
+      "id": "ML07",
+      "venue": "metlife",
+      "venue_name": "MetLife Stadium",
+      "date": "2026-07-05",
+      "round": "Round of 16",
+      "label": "Round of 16",
+      "sources": {
+        "seatgeek": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Round%20of%2016%20MetLife",
+          "note": "no SEATGEEK_CLIENT_ID"
+        },
+        "stubhub": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.stubhub.com/find/s/?q=World%20Cup%20Round%20of%2016%20MetLife",
+          "note": "no STUBHUB_API_TOKEN"
+        },
+        "fifa": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets",
+          "note": "manual: FIFA resale has no public price API"
+        }
+      }
+    },
+    {
+      "id": "ML08",
+      "venue": "metlife",
+      "venue_name": "MetLife Stadium",
+      "date": "2026-07-19",
+      "round": "Final",
+      "label": "FIFA World Cup Final",
+      "sources": {
+        "seatgeek": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Final%20MetLife",
+          "note": "no SEATGEEK_CLIENT_ID"
+        },
+        "stubhub": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.stubhub.com/find/s/?q=World%20Cup%20Final%20MetLife",
+          "note": "no STUBHUB_API_TOKEN"
+        },
+        "fifa": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets",
+          "note": "manual: FIFA resale has no public price API"
+        }
+      }
+    },
+    {
+      "id": "HR01",
+      "venue": "hardrock",
+      "venue_name": "Hard Rock Stadium",
+      "date": "2026-06-15",
+      "round": "Group",
+      "label": "Saudi Arabia vs Uruguay",
+      "sources": {
+        "seatgeek": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Saudi%20Arabia%20Uruguay%20Hard%20Rock",
+          "note": "no SEATGEEK_CLIENT_ID"
+        },
+        "stubhub": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.stubhub.com/find/s/?q=World%20Cup%20Saudi%20Arabia%20Uruguay%20Hard%20Rock",
+          "note": "no STUBHUB_API_TOKEN"
+        },
+        "fifa": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets",
+          "note": "manual: FIFA resale has no public price API"
+        }
+      }
+    },
+    {
+      "id": "HR02",
+      "venue": "hardrock",
+      "venue_name": "Hard Rock Stadium",
+      "date": "2026-06-21",
+      "round": "Group",
+      "label": "Uruguay vs Cabo Verde",
+      "sources": {
+        "seatgeek": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Uruguay%20Cabo%20Verde%20Hard%20Rock",
+          "note": "no SEATGEEK_CLIENT_ID"
+        },
+        "stubhub": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.stubhub.com/find/s/?q=World%20Cup%20Uruguay%20Cabo%20Verde%20Hard%20Rock",
+          "note": "no STUBHUB_API_TOKEN"
+        },
+        "fifa": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets",
+          "note": "manual: FIFA resale has no public price API"
+        }
+      }
+    },
+    {
+      "id": "HR03",
+      "venue": "hardrock",
+      "venue_name": "Hard Rock Stadium",
+      "date": "2026-06-24",
+      "round": "Group",
+      "label": "Scotland vs Brazil",
+      "sources": {
+        "seatgeek": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Scotland%20Brazil%20Hard%20Rock",
+          "note": "no SEATGEEK_CLIENT_ID"
+        },
+        "stubhub": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.stubhub.com/find/s/?q=World%20Cup%20Scotland%20Brazil%20Hard%20Rock",
+          "note": "no STUBHUB_API_TOKEN"
+        },
+        "fifa": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets",
+          "note": "manual: FIFA resale has no public price API"
+        }
+      }
+    },
+    {
+      "id": "HR04",
+      "venue": "hardrock",
+      "venue_name": "Hard Rock Stadium",
+      "date": "2026-06-27",
+      "round": "Group",
+      "label": "Portugal vs Colombia",
+      "sources": {
+        "seatgeek": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Portugal%20Colombia%20Hard%20Rock",
+          "note": "no SEATGEEK_CLIENT_ID"
+        },
+        "stubhub": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.stubhub.com/find/s/?q=World%20Cup%20Portugal%20Colombia%20Hard%20Rock",
+          "note": "no STUBHUB_API_TOKEN"
+        },
+        "fifa": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets",
+          "note": "manual: FIFA resale has no public price API"
+        }
+      }
+    },
+    {
+      "id": "HR05",
+      "venue": "hardrock",
+      "venue_name": "Hard Rock Stadium",
+      "date": "2026-07-03",
+      "round": "Round of 32",
+      "label": "Round of 32",
+      "sources": {
+        "seatgeek": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Round%20of%2032%20Hard%20Rock",
+          "note": "no SEATGEEK_CLIENT_ID"
+        },
+        "stubhub": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.stubhub.com/find/s/?q=World%20Cup%20Round%20of%2032%20Hard%20Rock",
+          "note": "no STUBHUB_API_TOKEN"
+        },
+        "fifa": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets",
+          "note": "manual: FIFA resale has no public price API"
+        }
+      }
+    },
+    {
+      "id": "HR06",
+      "venue": "hardrock",
+      "venue_name": "Hard Rock Stadium",
+      "date": "2026-07-11",
+      "round": "Quarter-final",
+      "label": "Quarter-final",
+      "sources": {
+        "seatgeek": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Quarter-final%20Hard%20Rock",
+          "note": "no SEATGEEK_CLIENT_ID"
+        },
+        "stubhub": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.stubhub.com/find/s/?q=World%20Cup%20Quarter-final%20Hard%20Rock",
+          "note": "no STUBHUB_API_TOKEN"
+        },
+        "fifa": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets",
+          "note": "manual: FIFA resale has no public price API"
+        }
+      }
+    },
+    {
+      "id": "HR07",
+      "venue": "hardrock",
+      "venue_name": "Hard Rock Stadium",
+      "date": "2026-07-18",
+      "round": "Third place",
+      "label": "Third-place Play-off",
+      "sources": {
+        "seatgeek": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Third%20Place%20Hard%20Rock",
+          "note": "no SEATGEEK_CLIENT_ID"
+        },
+        "stubhub": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.stubhub.com/find/s/?q=World%20Cup%20Third%20Place%20Hard%20Rock",
+          "note": "no STUBHUB_API_TOKEN"
+        },
+        "fifa": {
+          "min_price": null,
+          "listing_count": null,
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets",
+          "note": "manual: FIFA resale has no public price API"
+        }
+      }
+    }
+  ]
 }
