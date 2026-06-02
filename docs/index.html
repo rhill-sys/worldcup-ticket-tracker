@@ -121,9 +121,10 @@ function parseCSV(text) {
 
 async function load() {
   try {
+    const bust = "?t=" + Date.now();  // avoid stale browser/CDN cache
     const [hist, latest] = await Promise.all([
-      fetch("data/history.csv").then(r => r.ok ? r.text() : ""),
-      fetch("data/latest.json").then(r => r.ok ? r.json() : null),
+      fetch("data/history.csv" + bust, { cache: "no-store" }).then(r => r.ok ? r.text() : ""),
+      fetch("data/latest.json" + bust, { cache: "no-store" }).then(r => r.ok ? r.json() : null),
     ]);
     HISTORY = parseCSV(hist);
     LATEST = latest;
