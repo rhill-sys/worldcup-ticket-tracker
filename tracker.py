@@ -59,45 +59,63 @@ def http_get_json(url, headers=None):
 # --------------------------------------------------------------------------- #
 
 def source_seatgeek(match, venue):
-    """SeatGeek public API. Needs SEATGEEK_CLIENT_ID. Matches by date + venue."""
+    """SeatGeek public API. Needs SEATGEEK_CLIENT_ID.
+
+    Strategy: search by the match DATE window (most reliable anchor), then pick the
+    event whose venue matches our stadium. World Cup events on SeatGeek aren't
+    reliably titled with team names (the draw happened late), so we do NOT rely on
+    team-name text. We fall back through a few queries and record a diagnostic
+    `note` so the data shows exactly what SeatGeek returned.
+    """
     client_id = os.environ.get("SEATGEEK_CLIENT_ID")
     fallback_url = "https://seatgeek.com/search?q=" + urllib.parse.quote(match["query"])
     if not client_id:
         return {"min_price": None, "listing_count": None, "url": fallback_url, "note": "no SEATGEEK_CLIENT_ID"}
-    try:
-        date = match["date"]
-        nxt = (dt.date.fromisoformat(date) + dt.timedelta(days=1)).isoformat()
+
+    date = match["date"]
+    nxt = (dt.date.fromisoformat(date) + dt.timedelta(days=1)).isoformat()
+    vkey = venue["name"].lower().split()[0]  # "metlife" / "hard"
+
+    def fetch(extra):
         params = {
             "client_id": client_id,
-            "q": match["query"],
             "datetime_local.gte": date + "T00:00:00",
             "datetime_local.lte": nxt + "T00:00:00",
-            "per_page": 50,
+            "per_page": 100,
         }
+        params.update(extra)
         url = "https://api.seatgeek.com/2/events?" + urllib.parse.urlencode(params)
-        data = http_get_json(url)
-        events = data.get("events", [])
-        # Prefer an event whose venue name matches; otherwise take the first.
-        chosen = None
-        vname = venue["name"].lower()
-        for ev in events:
-            ev_venue = (ev.get("venue", {}) or {}).get("name", "").lower()
-            if vname.split()[0] in ev_venue:
-                chosen = ev
-                break
-        if chosen is None and events:
-            chosen = events[0]
-        if not chosen:
-            return {"min_price": None, "listing_count": None, "url": fallback_url}
-        stats = chosen.get("stats", {}) or {}
-        return {
-            "min_price": stats.get("lowest_price"),
-            "listing_count": stats.get("listing_count"),
-            "url": chosen.get("url") or fallback_url,
-        }
+        return http_get_json(url).get("events", []) or []
+
+    # Try progressively: soccer taxonomy on the date, then a "world cup" text
+    # search on the date, then the configured specific query.
+    strategies = [
+        {"taxonomies.name": "soccer"},
+        {"q": "World Cup"},
+        {"q": match["query"]},
+    ]
+    try:
+        total_seen = 0
+        for strat in strategies:
+            events = fetch(strat)
+            total_seen = max(total_seen, len(events))
+            for ev in events:
+                ev_venue = (ev.get("venue", {}) or {}).get("name", "").lower()
+                if vkey in ev_venue:
+                    stats = ev.get("stats", {}) or {}
+                    price = stats.get("lowest_price")
+                    note = "" if price is not None else f"event found, no listings yet ({ev.get('short_title','')})"
+                    return {
+                        "min_price": price,
+                        "listing_count": stats.get("listing_count"),
+                        "url": ev.get("url") or fallback_url,
+                        "note": note,
+                    }
+        return {"min_price": None, "listing_count": None, "url": fallback_url,
+                "note": f"no SeatGeek event at {venue['name']} on {date} ({total_seen} events that day)"}
     except Exception as e:  # noqa: BLE001
         log(f"  seatgeek error for {match['id']}: {e}")
-        return {"min_price": None, "listing_count": None, "url": fallback_url}
+        return {"min_price": None, "listing_count": None, "url": fallback_url, "note": f"error: {e}"}
 
 
 def source_stubhub(match, venue):
