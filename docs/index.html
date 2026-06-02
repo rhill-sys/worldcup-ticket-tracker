@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>World Cup 2026 Ticket Price Tracker — MetLife &amp; Hard Rock</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #0d1117; --panel: #161b22; --border: #30363d;
+    --text: #e6edf3; --muted: #8b949e; --accent: #2f81f7;
+    --metlife: #2f81f7; --hardrock: #f78166; --green: #3fb950;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+  }
+  header { padding: 24px 20px 8px; border-bottom: 1px solid var(--border); }
+  header h1 { margin: 0 0 4px; font-size: 22px; }
+  header p { margin: 0; color: var(--muted); font-size: 13px; }
+  main { max-width: 1100px; margin: 0 auto; padding: 20px; }
+  .controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 18px; }
+  select {
+    background: var(--panel); color: var(--text); border: 1px solid var(--border);
+    border-radius: 6px; padding: 7px 10px; font-size: 14px;
+  }
+  .panel {
+    background: var(--panel); border: 1px solid var(--border);
+    border-radius: 10px; padding: 16px; margin-bottom: 20px;
+  }
+  h2 { font-size: 15px; margin: 0 0 12px; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--border); }
+  th { color: var(--muted); font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .03em; }
+  td.price { font-variant-numeric: tabular-nums; font-weight: 600; }
+  .pill { display: inline-block; font-size: 11px; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); }
+  .pill.metlife { color: var(--metlife); border-color: var(--metlife); }
+  .pill.hardrock { color: var(--hardrock); border-color: var(--hardrock); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .muted { color: var(--muted); }
+  .chart-wrap { position: relative; height: 380px; }
+  footer { color: var(--muted); font-size: 12px; padding: 8px 20px 40px; text-align: center; }
+  .na { color: var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <h1>⚽ World Cup 2026 Ticket Price Tracker</h1>
+  <p>Cheapest current listings for every match at <strong>MetLife Stadium</strong> and <strong>Hard Rock Stadium</strong>. Updated daily · <span id="updated">loading…</span></p>
+</header>
+
+<main>
+  <div class="controls">
+    <label>Venue
+      <select id="venueFilter">
+        <option value="all">All venues</option>
+        <option value="metlife">MetLife Stadium</option>
+        <option value="hardrock">Hard Rock Stadium</option>
+      </select>
+    </label>
+    <label>Match (for chart)
+      <select id="matchSelect"></select>
+    </label>
+  </div>
+
+  <div class="panel">
+    <h2>Current cheapest listing</h2>
+    <div style="overflow-x:auto;">
+      <table id="currentTable">
+        <thead>
+          <tr>
+            <th>Match</th><th>Venue</th><th>Date</th>
+            <th>SeatGeek</th><th>StubHub</th><th>FIFA resale</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2 id="chartTitle">Price history</h2>
+    <div class="chart-wrap"><canvas id="historyChart"></canvas></div>
+  </div>
+</main>
+
+<footer>
+  Prices shown are the lowest available listing at fetch time and exclude fees (~15% on resale).
+  This is an unofficial tracker. Always confirm on the source site before purchasing.
+</footer>
+
+<script>
+const CURRENCY_SYMBOL = "$";
+let HISTORY = [];   // array of row objects
+let LATEST = null;  // latest.json
+
+function fmt(v) {
+  if (v === "" || v === null || v === undefined || isNaN(v)) return null;
+  return CURRENCY_SYMBOL + Number(v).toLocaleString();
+}
+
+function parseCSV(text) {
+  const lines = text.trim().split(/\r?\n/);
+  if (lines.length < 2) return [];
+  const header = lines[0].split(",");
+  return lines.slice(1).map(line => {
+    // URLs are the last field and may contain no commas in our data, but to be
+    // safe we split into header.length-1 parts and treat the remainder as url.
+    const parts = line.split(",");
+    const obj = {};
+    header.forEach((h, i) => {
+      if (i === header.length - 1) obj[h] = parts.slice(i).join(",");
+      else obj[h] = parts[i];
+    });
+    return obj;
+  });
+}
+
+async function load() {
+  try {
+    const [hist, latest] = await Promise.all([
+      fetch("data/history.csv").then(r => r.ok ? r.text() : ""),
+      fetch("data/latest.json").then(r => r.ok ? r.json() : null),
+    ]);
+    HISTORY = parseCSV(hist);
+    LATEST = latest;
+  } catch (e) {
+    console.error(e);
+  }
+  if (LATEST && LATEST.generated_at) {
+    document.getElementById("updated").textContent =
+      "last updated " + new Date(LATEST.generated_at).toLocaleString();
+  } else {
+    document.getElementById("updated").textContent =
+      "no data yet — the daily job will populate this after its first run";
+  }
+  render();
+}
+
+function currentMatches() {
+  const v = document.getElementById("venueFilter").value;
+  const matches = (LATEST && LATEST.matches) ? LATEST.matches : [];
+  return v === "all" ? matches : matches.filter(m => m.venue === v);
+}
+
+function renderTable() {
+  const tbody = document.querySelector("#currentTable tbody");
+  tbody.innerHTML = "";
+  const matches = currentMatches();
+  if (!matches.length) {
+    tbody.innerHTML = '<tr><td colspan="6" class="muted">No data yet.</td></tr>';
+    return;
+  }
+  for (const m of matches) {
+    const tr = document.createElement("tr");
+    const cell = (src) => {
+      const s = m.sources && m.sources[src];
+      if (!s) return '<span class="na">—</span>';
+      const price = fmt(s.min_price);
+      const link = s.url ? ` <a href="${s.url}" target="_blank" rel="noopener">↗</a>` : "";
+      if (price) {
+        const count = s.listing_count ? ` <span class="muted">(${s.listing_count})</span>` : "";
+        return `${price}${count}${link}`;
+      }
+      return `<span class="na">link${link}</span>`;
+    };
+    const pillClass = m.venue === "metlife" ? "metlife" : "hardrock";
+    tr.innerHTML = `
+      <td>${m.label}<br><span class="muted" style="font-size:12px">${m.round}</span></td>
+      <td><span class="pill ${pillClass}">${m.venue_name}</span></td>
+      <td>${m.date}</td>
+      <td class="price">${cell("seatgeek")}</td>
+      <td class="price">${cell("stubhub")}</td>
+      <td class="price">${cell("fifa")}</td>`;
+    tbody.appendChild(tr);
+  }
+}
+
+function populateMatchSelect() {
+  const sel = document.getElementById("matchSelect");
+  const prev = sel.value;
+  sel.innerHTML = "";
+  for (const m of currentMatches()) {
+    const opt = document.createElement("option");
+    opt.value = m.id;
+    opt.textContent = `${m.venue_name} — ${m.label} (${m.date})`;
+    sel.appendChild(opt);
+  }
+  if ([...sel.options].some(o => o.value === prev)) sel.value = prev;
+}
+
+let chart = null;
+const SOURCE_COLORS = { seatgeek: "#3fb950", stubhub: "#f78166", fifa: "#a371f7" };
+
+function renderChart() {
+  const matchId = document.getElementById("matchSelect").value;
+  const rows = HISTORY.filter(r => r.match_id === matchId && r.min_price !== "");
+  const match = (LATEST?.matches || []).find(m => m.id === matchId);
+  document.getElementById("chartTitle").textContent =
+    match ? `Price history — ${match.venue_name}: ${match.label}` : "Price history";
+
+  // Build per-source series keyed by timestamp date.
+  const sources = [...new Set(rows.map(r => r.source))];
+  const labels = [...new Set(rows.map(r => r.timestamp.slice(0, 10)))].sort();
+  const datasets = sources.map(src => ({
+    label: src,
+    data: labels.map(d => {
+      const row = rows.find(r => r.timestamp.slice(0, 10) === d && r.source === src);
+      return row ? Number(row.min_price) : null;
+    }),
+    borderColor: SOURCE_COLORS[src] || "#2f81f7",
+    backgroundColor: "transparent",
+    spanGaps: true, tension: 0.2, pointRadius: 3,
+  }));
+
+  if (chart) chart.destroy();
+  const ctx = document.getElementById("historyChart");
+  if (!labels.length) {
+    if (chart) chart.destroy();
+    ctx.getContext("2d").clearRect(0, 0, ctx.width, ctx.height);
+    return;
+  }
+  chart = new Chart(ctx, {
+    type: "line",
+    data: { labels, datasets },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { labels: { color: "#e6edf3" } },
+        tooltip: { callbacks: { label: c => `${c.dataset.label}: ${CURRENCY_SYMBOL}${c.parsed.y?.toLocaleString()}` } },
+      },
+      scales: {
+        x: { ticks: { color: "#8b949e" }, grid: { color: "#21262d" } },
+        y: { ticks: { color: "#8b949e", callback: v => CURRENCY_SYMBOL + v.toLocaleString() }, grid: { color: "#21262d" } },
+      },
+    },
+  });
+}
+
+function render() { renderTable(); populateMatchSelect(); renderChart(); }
+
+document.getElementById("venueFilter").addEventListener("change", render);
+document.getElementById("matchSelect").addEventListener("change", renderChart);
+load();
+</script>
+</body>
+</html>
