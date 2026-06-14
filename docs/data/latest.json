@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T14:55:37+00:00",
+  "generated_at": "2026-06-14T15:03:55+00:00",
   "currency": "USD",
   "matches": [
     {
@@ -13,8 +13,8 @@
         "seatgeek": {
           "min_price": null,
           "listing_count": null,
-          "url": "https://seatgeek.com/fifa-world-cup-tickets/international-soccer/2026-06-13-6-pm/17269669",
-          "note": "event found, no listings yet (Brazil vs Morocco - World Cup)"
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Brazil%20Morocco%20MetLife",
+          "note": "no SeatGeek event at MetLife Stadium on 2026-06-13 (0 events that day)"
         },
         "stubhub": {
           "min_price": null,
