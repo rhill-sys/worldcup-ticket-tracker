@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T17:48:21+00:00",
+  "generated_at": "2026-06-16T17:53:40+00:00",
   "currency": "USD",
   "matches": [
     {
@@ -154,7 +154,7 @@
           "min_price": null,
           "listing_count": null,
           "url": "https://seatgeek.com/fifa-world-cup-tickets/international-soccer/2026-06-30-5-pm/17269676",
-          "note": "event found, no listings yet (Round of 32 - 1I vs TBD - World Cup)"
+          "note": "event found, no listings yet (1I vs TBD - Round of 32 - World Cup)"
         },
         "stubhub": {
           "min_price": null,
@@ -182,7 +182,7 @@
           "min_price": null,
           "listing_count": null,
           "url": "https://seatgeek.com/fifa-world-cup-tickets/international-soccer/2026-07-05-4-pm/17269677",
-          "note": "event found, no listings yet (Round of 16 - W76 vs W78 - World Cup)"
+          "note": "event found, no listings yet (W76 vs W78 - Round of 16 - World Cup)"
         },
         "stubhub": {
           "min_price": null,
@@ -237,8 +237,8 @@
         "seatgeek": {
           "min_price": null,
           "listing_count": null,
-          "url": "https://seatgeek.com/fifa-world-cup-tickets/international-soccer/2026-06-15-6-pm/17164014",
-          "note": "event found, no listings yet (Uruguay vs Saudi Arabia - World Cup)"
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Saudi%20Arabia%20Uruguay%20Hard%20Rock",
+          "note": "no SeatGeek event at Hard Rock Stadium on 2026-06-15 (0 events that day)"
         },
         "stubhub": {
           "min_price": null,
@@ -350,7 +350,7 @@
           "min_price": null,
           "listing_count": null,
           "url": "https://seatgeek.com/fifa-world-cup-tickets/international-soccer/2026-07-03-6-pm/17164018",
-          "note": "event found, no listings yet (Round of 32 - 1J vs 2H - World Cup)"
+          "note": "event found, no listings yet (1J vs 2H - Round of 32 - World Cup)"
         },
         "stubhub": {
           "min_price": null,
@@ -378,7 +378,7 @@
           "min_price": null,
           "listing_count": null,
           "url": "https://seatgeek.com/fifa-world-cup-tickets/international-soccer/2026-07-11-5-pm/17164019",
-          "note": "event found, no listings yet (World Cup Quarterfinals - W91 vs W92)"
+          "note": "event found, no listings yet (W91 vs W92 - Quarterfinals - World Cup)"
         },
         "stubhub": {
           "min_price": null,
