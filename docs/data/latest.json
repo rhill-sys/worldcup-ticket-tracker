@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T17:53:40+00:00",
+  "generated_at": "2026-06-17T16:32:11+00:00",
   "currency": "USD",
   "matches": [
     {
@@ -41,8 +41,8 @@
         "seatgeek": {
           "min_price": null,
           "listing_count": null,
-          "url": "https://seatgeek.com/fifa-world-cup-tickets/international-soccer/2026-06-16-3-pm/17269672",
-          "note": "event found, no listings yet (France vs Senegal - World Cup)"
+          "url": "https://seatgeek.com/search?q=World%20Cup%20France%20Senegal%20MetLife",
+          "note": "no SeatGeek event at MetLife Stadium on 2026-06-16 (0 events that day)"
         },
         "stubhub": {
           "min_price": null,
