@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T15:05:48+00:00",
+  "generated_at": "2026-06-22T17:25:07+00:00",
   "currency": "USD",
   "matches": [
     {
@@ -265,8 +265,8 @@
         "seatgeek": {
           "min_price": null,
           "listing_count": null,
-          "url": "https://seatgeek.com/fifa-world-cup-tickets/international-soccer/2026-06-21-6-pm/17164015",
-          "note": "event found, no listings yet (Uruguay vs Cape Verde - World Cup)"
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Uruguay%20Cabo%20Verde%20Hard%20Rock",
+          "note": "no SeatGeek event at Hard Rock Stadium on 2026-06-21 (0 events that day)"
         },
         "stubhub": {
           "min_price": null,
