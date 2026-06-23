@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-22T17:25:07+00:00",
+  "generated_at": "2026-06-23T15:43:19+00:00",
   "currency": "USD",
   "matches": [
     {
@@ -69,8 +69,8 @@
         "seatgeek": {
           "min_price": null,
           "listing_count": null,
-          "url": "https://seatgeek.com/fifa-world-cup-tickets/international-soccer/2026-06-22-8-pm/17269673",
-          "note": "event found, no listings yet (Norway vs Senegal - World Cup)"
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Norway%20Senegal%20MetLife",
+          "note": "no SeatGeek event at MetLife Stadium on 2026-06-22 (0 events that day)"
         },
         "stubhub": {
           "min_price": null,
@@ -350,7 +350,7 @@
           "min_price": null,
           "listing_count": null,
           "url": "https://seatgeek.com/fifa-world-cup-tickets/international-soccer/2026-07-03-6-pm/17164018",
-          "note": "event found, no listings yet (1J vs 2H - Round of 32 - World Cup)"
+          "note": "event found, no listings yet (Argentina vs 2H - Round of 32 - World Cup)"
         },
         "stubhub": {
           "min_price": null,
