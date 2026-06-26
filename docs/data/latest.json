@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T15:36:29+00:00",
+  "generated_at": "2026-06-26T15:19:32+00:00",
   "currency": "USD",
   "matches": [
     {
@@ -97,8 +97,8 @@
         "seatgeek": {
           "min_price": null,
           "listing_count": null,
-          "url": "https://seatgeek.com/fifa-world-cup-tickets/international-soccer/2026-06-25-4-pm/17269674",
-          "note": "event found, no listings yet (Germany vs Ecuador - World Cup)"
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Ecuador%20Germany%20MetLife",
+          "note": "no SeatGeek event at MetLife Stadium on 2026-06-25 (0 events that day)"
         },
         "stubhub": {
           "min_price": null,
