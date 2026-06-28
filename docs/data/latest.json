@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T14:22:16+00:00",
+  "generated_at": "2026-06-28T14:42:14+00:00",
   "currency": "USD",
   "matches": [
     {
@@ -125,8 +125,8 @@
         "seatgeek": {
           "min_price": null,
           "listing_count": null,
-          "url": "https://seatgeek.com/fifa-world-cup-tickets/international-soccer/2026-06-27-5-pm/17269675",
-          "note": "event found, no listings yet (England vs Panama - World Cup)"
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Panama%20England%20MetLife",
+          "note": "no SeatGeek event at MetLife Stadium on 2026-06-27 (0 events that day)"
         },
         "stubhub": {
           "min_price": null,
@@ -321,8 +321,8 @@
         "seatgeek": {
           "min_price": null,
           "listing_count": null,
-          "url": "https://seatgeek.com/fifa-world-cup-tickets/international-soccer/2026-06-27-7-30-pm/17164017",
-          "note": "event found, no listings yet (Colombia vs Portugal - World Cup)"
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Portugal%20Colombia%20Hard%20Rock",
+          "note": "no SeatGeek event at Hard Rock Stadium on 2026-06-27 (0 events that day)"
         },
         "stubhub": {
           "min_price": null,
