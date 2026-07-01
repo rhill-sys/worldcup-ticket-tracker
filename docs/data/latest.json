@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T15:22:11+00:00",
+  "generated_at": "2026-07-01T15:34:12+00:00",
   "currency": "USD",
   "matches": [
     {
@@ -153,8 +153,8 @@
         "seatgeek": {
           "min_price": null,
           "listing_count": null,
-          "url": "https://seatgeek.com/fifa-world-cup-tickets/international-soccer/2026-06-30-5-pm/17269676",
-          "note": "event found, no listings yet (France vs Sweden - Round of 32 - World Cup)"
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Round%20of%2032%20MetLife",
+          "note": "no SeatGeek event at MetLife Stadium on 2026-06-30 (0 events that day)"
         },
         "stubhub": {
           "min_price": null,
@@ -182,7 +182,7 @@
           "min_price": null,
           "listing_count": null,
           "url": "https://seatgeek.com/fifa-world-cup-tickets/international-soccer/2026-07-05-4-pm/17269677",
-          "note": "event found, no listings yet (Brazil vs W78 - Round of 16 - World Cup)"
+          "note": "event found, no listings yet (Brazil vs Norway - Round of 16 - World Cup)"
         },
         "stubhub": {
           "min_price": null,
