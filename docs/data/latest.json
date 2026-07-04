@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T15:00:53+00:00",
+  "generated_at": "2026-07-04T14:22:52+00:00",
   "currency": "USD",
   "matches": [
     {
@@ -349,8 +349,8 @@
         "seatgeek": {
           "min_price": null,
           "listing_count": null,
-          "url": "https://seatgeek.com/fifa-world-cup-tickets/international-soccer/2026-07-03-6-pm/17164018",
-          "note": "event found, no listings yet (Argentina vs Cape Verde - Round of 32 - World Cup)"
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Round%20of%2032%20Hard%20Rock",
+          "note": "no SeatGeek event at Hard Rock Stadium on 2026-07-03 (0 events that day)"
         },
         "stubhub": {
           "min_price": null,
