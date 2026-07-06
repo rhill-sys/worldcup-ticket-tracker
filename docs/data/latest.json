@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T14:24:49+00:00",
+  "generated_at": "2026-07-06T16:15:08+00:00",
   "currency": "USD",
   "matches": [
     {
@@ -181,8 +181,8 @@
         "seatgeek": {
           "min_price": null,
           "listing_count": null,
-          "url": "https://seatgeek.com/fifa-world-cup-tickets/international-soccer/2026-07-05-4-pm/17269677",
-          "note": "event found, no listings yet (Brazil vs Norway - Round of 16 - World Cup)"
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Round%20of%2016%20MetLife",
+          "note": "no SeatGeek event at MetLife Stadium on 2026-07-05 (0 events that day)"
         },
         "stubhub": {
           "min_price": null,
@@ -378,7 +378,7 @@
           "min_price": null,
           "listing_count": null,
           "url": "https://seatgeek.com/fifa-world-cup-tickets/international-soccer/2026-07-11-5-pm/17164019",
-          "note": "event found, no listings yet (W91 vs W92 - Quarterfinals - World Cup)"
+          "note": "event found, no listings yet (Norway vs England - Quarterfinals - World Cup)"
         },
         "stubhub": {
           "min_price": null,
