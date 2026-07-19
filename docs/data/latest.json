@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T14:14:43+00:00",
+  "generated_at": "2026-07-19T14:19:28+00:00",
   "currency": "USD",
   "matches": [
     {
@@ -405,8 +405,8 @@
         "seatgeek": {
           "min_price": null,
           "listing_count": null,
-          "url": "https://seatgeek.com/fifa-world-cup-tickets/international-soccer/2026-07-18-5-pm/17164020",
-          "note": "event found, no listings yet (France vs England - World Cup Third Place)"
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Third%20Place%20Hard%20Rock",
+          "note": "no SeatGeek event at Hard Rock Stadium on 2026-07-18 (0 events that day)"
         },
         "stubhub": {
           "min_price": null,
