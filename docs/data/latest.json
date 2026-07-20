@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19T14:19:28+00:00",
+  "generated_at": "2026-07-20T15:00:44+00:00",
   "currency": "USD",
   "matches": [
     {
@@ -209,8 +209,8 @@
         "seatgeek": {
           "min_price": null,
           "listing_count": null,
-          "url": "https://seatgeek.com/fifa-world-cup-tickets/international-soccer/2026-07-19-3-pm/17307574",
-          "note": "event found, no listings yet (Spain vs Argentina - World Cup Final)"
+          "url": "https://seatgeek.com/search?q=World%20Cup%20Final%20MetLife",
+          "note": "no SeatGeek event at MetLife Stadium on 2026-07-19 (0 events that day)"
         },
         "stubhub": {
           "min_price": null,
