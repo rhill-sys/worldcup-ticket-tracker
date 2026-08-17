@@ -3599,3 +3599,48 @@ timestamp,venue,match_id,match_label,match_date,round,source,min_price,listing_c
 2026-08-16T13:22:47+00:00,Hard Rock Stadium,HR07,Third-place Play-off,2026-07-18,Third place,seatgeek,,,USD,https://seatgeek.com/search?q=World%20Cup%20Third%20Place%20Hard%20Rock
 2026-08-16T13:22:47+00:00,Hard Rock Stadium,HR07,Third-place Play-off,2026-07-18,Third place,stubhub,,,USD,https://www.stubhub.com/find/s/?q=World%20Cup%20Third%20Place%20Hard%20Rock
 2026-08-16T13:22:47+00:00,Hard Rock Stadium,HR07,Third-place Play-off,2026-07-18,Third place,fifa,,,USD,https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML01,Brazil vs Morocco,2026-06-13,Group,seatgeek,,,USD,https://seatgeek.com/search?q=World%20Cup%20Brazil%20Morocco%20MetLife
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML01,Brazil vs Morocco,2026-06-13,Group,stubhub,,,USD,https://www.stubhub.com/find/s/?q=World%20Cup%20Brazil%20Morocco%20MetLife
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML01,Brazil vs Morocco,2026-06-13,Group,fifa,,,USD,https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML02,France vs Senegal,2026-06-16,Group,seatgeek,,,USD,https://seatgeek.com/search?q=World%20Cup%20France%20Senegal%20MetLife
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML02,France vs Senegal,2026-06-16,Group,stubhub,,,USD,https://www.stubhub.com/find/s/?q=World%20Cup%20France%20Senegal%20MetLife
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML02,France vs Senegal,2026-06-16,Group,fifa,,,USD,https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML03,Norway vs Senegal,2026-06-22,Group,seatgeek,,,USD,https://seatgeek.com/search?q=World%20Cup%20Norway%20Senegal%20MetLife
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML03,Norway vs Senegal,2026-06-22,Group,stubhub,,,USD,https://www.stubhub.com/find/s/?q=World%20Cup%20Norway%20Senegal%20MetLife
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML03,Norway vs Senegal,2026-06-22,Group,fifa,,,USD,https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML04,Ecuador vs Germany,2026-06-25,Group,seatgeek,,,USD,https://seatgeek.com/search?q=World%20Cup%20Ecuador%20Germany%20MetLife
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML04,Ecuador vs Germany,2026-06-25,Group,stubhub,,,USD,https://www.stubhub.com/find/s/?q=World%20Cup%20Ecuador%20Germany%20MetLife
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML04,Ecuador vs Germany,2026-06-25,Group,fifa,,,USD,https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML05,Panama vs England,2026-06-27,Group,seatgeek,,,USD,https://seatgeek.com/search?q=World%20Cup%20Panama%20England%20MetLife
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML05,Panama vs England,2026-06-27,Group,stubhub,,,USD,https://www.stubhub.com/find/s/?q=World%20Cup%20Panama%20England%20MetLife
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML05,Panama vs England,2026-06-27,Group,fifa,,,USD,https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML06,Round of 32,2026-06-30,Round of 32,seatgeek,,,USD,https://seatgeek.com/search?q=World%20Cup%20Round%20of%2032%20MetLife
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML06,Round of 32,2026-06-30,Round of 32,stubhub,,,USD,https://www.stubhub.com/find/s/?q=World%20Cup%20Round%20of%2032%20MetLife
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML06,Round of 32,2026-06-30,Round of 32,fifa,,,USD,https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML07,Round of 16,2026-07-05,Round of 16,seatgeek,,,USD,https://seatgeek.com/search?q=World%20Cup%20Round%20of%2016%20MetLife
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML07,Round of 16,2026-07-05,Round of 16,stubhub,,,USD,https://www.stubhub.com/find/s/?q=World%20Cup%20Round%20of%2016%20MetLife
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML07,Round of 16,2026-07-05,Round of 16,fifa,,,USD,https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML08,FIFA World Cup Final,2026-07-19,Final,seatgeek,,,USD,https://seatgeek.com/search?q=World%20Cup%20Final%20MetLife
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML08,FIFA World Cup Final,2026-07-19,Final,stubhub,,,USD,https://www.stubhub.com/find/s/?q=World%20Cup%20Final%20MetLife
+2026-08-17T13:31:16+00:00,MetLife Stadium,ML08,FIFA World Cup Final,2026-07-19,Final,fifa,,,USD,https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets
+2026-08-17T13:31:16+00:00,Hard Rock Stadium,HR01,Saudi Arabia vs Uruguay,2026-06-15,Group,seatgeek,,,USD,https://seatgeek.com/search?q=World%20Cup%20Saudi%20Arabia%20Uruguay%20Hard%20Rock
+2026-08-17T13:31:16+00:00,Hard Rock Stadium,HR01,Saudi Arabia vs Uruguay,2026-06-15,Group,stubhub,,,USD,https://www.stubhub.com/find/s/?q=World%20Cup%20Saudi%20Arabia%20Uruguay%20Hard%20Rock
+2026-08-17T13:31:16+00:00,Hard Rock Stadium,HR01,Saudi Arabia vs Uruguay,2026-06-15,Group,fifa,,,USD,https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets
+2026-08-17T13:31:16+00:00,Hard Rock Stadium,HR02,Uruguay vs Cabo Verde,2026-06-21,Group,seatgeek,,,USD,https://seatgeek.com/search?q=World%20Cup%20Uruguay%20Cabo%20Verde%20Hard%20Rock
+2026-08-17T13:31:16+00:00,Hard Rock Stadium,HR02,Uruguay vs Cabo Verde,2026-06-21,Group,stubhub,,,USD,https://www.stubhub.com/find/s/?q=World%20Cup%20Uruguay%20Cabo%20Verde%20Hard%20Rock
+2026-08-17T13:31:16+00:00,Hard Rock Stadium,HR02,Uruguay vs Cabo Verde,2026-06-21,Group,fifa,,,USD,https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets
+2026-08-17T13:31:16+00:00,Hard Rock Stadium,HR03,Scotland vs Brazil,2026-06-24,Group,seatgeek,,,USD,https://seatgeek.com/search?q=World%20Cup%20Scotland%20Brazil%20Hard%20Rock
+2026-08-17T13:31:16+00:00,Hard Rock Stadium,HR03,Scotland vs Brazil,2026-06-24,Group,stubhub,,,USD,https://www.stubhub.com/find/s/?q=World%20Cup%20Scotland%20Brazil%20Hard%20Rock
+2026-08-17T13:31:16+00:00,Hard Rock Stadium,HR03,Scotland vs Brazil,2026-06-24,Group,fifa,,,USD,https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets
+2026-08-17T13:31:16+00:00,Hard Rock Stadium,HR04,Portugal vs Colombia,2026-06-27,Group,seatgeek,,,USD,https://seatgeek.com/search?q=World%20Cup%20Portugal%20Colombia%20Hard%20Rock
+2026-08-17T13:31:16+00:00,Hard Rock Stadium,HR04,Portugal vs Colombia,2026-06-27,Group,stubhub,,,USD,https://www.stubhub.com/find/s/?q=World%20Cup%20Portugal%20Colombia%20Hard%20Rock
+2026-08-17T13:31:16+00:00,Hard Rock Stadium,HR04,Portugal vs Colombia,2026-06-27,Group,fifa,,,USD,https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets
+2026-08-17T13:31:16+00:00,Hard Rock Stadium,HR05,Round of 32,2026-07-03,Round of 32,seatgeek,,,USD,https://seatgeek.com/search?q=World%20Cup%20Round%20of%2032%20Hard%20Rock
+2026-08-17T13:31:16+00:00,Hard Rock Stadium,HR05,Round of 32,2026-07-03,Round of 32,stubhub,,,USD,https://www.stubhub.com/find/s/?q=World%20Cup%20Round%20of%2032%20Hard%20Rock
+2026-08-17T13:31:16+00:00,Hard Rock Stadium,HR05,Round of 32,2026-07-03,Round of 32,fifa,,,USD,https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets
+2026-08-17T13:31:16+00:00,Hard Rock Stadium,HR06,Quarter-final,2026-07-11,Quarter-final,seatgeek,,,USD,https://seatgeek.com/search?q=World%20Cup%20Quarter-final%20Hard%20Rock
+2026-08-17T13:31:16+00:00,Hard Rock Stadium,HR06,Quarter-final,2026-07-11,Quarter-final,stubhub,,,USD,https://www.stubhub.com/find/s/?q=World%20Cup%20Quarter-final%20Hard%20Rock
+2026-08-17T13:31:16+00:00,Hard Rock Stadium,HR06,Quarter-final,2026-07-11,Quarter-final,fifa,,,USD,https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets
+2026-08-17T13:31:16+00:00,Hard Rock Stadium,HR07,Third-place Play-off,2026-07-18,Third place,seatgeek,,,USD,https://seatgeek.com/search?q=World%20Cup%20Third%20Place%20Hard%20Rock
+2026-08-17T13:31:16+00:00,Hard Rock Stadium,HR07,Third-place Play-off,2026-07-18,Third place,stubhub,,,USD,https://www.stubhub.com/find/s/?q=World%20Cup%20Third%20Place%20Hard%20Rock
+2026-08-17T13:31:16+00:00,Hard Rock Stadium,HR07,Third-place Play-off,2026-07-18,Third place,fifa,,,USD,https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/tickets
